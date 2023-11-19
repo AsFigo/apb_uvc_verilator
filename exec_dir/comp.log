@@ -1,0 +1,1 @@
+-Info: Command Line disabled gate optimization with -fno-gate.  This may cause ordering problems.

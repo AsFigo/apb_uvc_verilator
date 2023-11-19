@@ -1,0 +1,8 @@
++incdir+../sv_src 
++incdir+../sv_src/seq_tests 
+../sv_src/AsFigo_vlt_uvm_fixes.sv
+
+../sv_src/apb2_master_pkg.sv 
+../sv_src/apb2_master_if.sv 
+../sv_src/slave_apb.v 
+../sv_src/apb2_master_tb_dut_top.sv

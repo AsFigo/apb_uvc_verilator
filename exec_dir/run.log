@@ -1,0 +1,136 @@
+UVM_INFO /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_root.svh(449) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_root.svh(517) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test apb2_master_rand_test...
+UVM_INFO ../sv_src/apb2_master_agent.sv(41) @ 0: uvm_test_top.apb2_master_env.apb2_master_agent [apb2_master_agent] is_active is set to UVM_ACTIVE
+UVM_INFO ../sv_src/apb2_master_agent.sv(67) @ 0: uvm_test_top.apb2_master_env.apb2_master_agent [apb2_master_agent] virtual interface connected
+UVM_INFO /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_root.svh(640) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------------
+Name                               Type                        Size  Value
+--------------------------------------------------------------------------
+<unnamed>                          uvm_root                    -     @36  
+  uvm_test_top                     apb2_master_rand_test       -     @93  
+    apb2_master_env                apb2_master_env             -     @138 
+      apb2_master_agent            apb2_master_agent           -     @148 
+        apb2_master_driver         apb2_master_driver          -     @258 
+          rsp_port                 uvm_analysis_port           -     @277 
+          seq_item_port            uvm_seq_item_pull_port      -     @267 
+        apb2_master_input_monitor  apb2_master_input_monitor   -     @171 
+          in_aport                 uvm_analysis_port           -     @180 
+        apb2_master_scoreboard     apb2_master_scoreboard      -     @190 
+          in_afifo                 uvm_tlm_analysis_fifo #(T)  -     @199 
+            analysis_export        uvm_analysis_imp            -     @248 
+            get_ap                 uvm_analysis_port           -     @238 
+            get_peek_export        uvm_get_peek_imp            -     @218 
+            put_ap                 uvm_analysis_port           -     @228 
+            put_export             uvm_put_imp                 -     @208 
+        apb2_master_sequencer      apb2_master_sequencer       -     @287 
+          rsp_export               uvm_analysis_export         -     @296 
+          seq_item_export          uvm_seq_item_pull_imp       -     @414 
+          arbitration_queue        array                       0     -    
+          lock_queue               array                       0     -    
+          num_last_reqs            integral                    32    'd1  
+          num_last_rsps            integral                    32    'd1  
+--------------------------------------------------------------------------
+UVM_INFO /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(289) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "uvm_test_top" of the component "uvm_test_top" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "apb2_master_env" of the component "uvm_test_top.apb2_master_env" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "apb2_master_agent" of the component "uvm_test_top.apb2_master_env.apb2_master_agent" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "apb2_master_driver" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_driver" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "rsp_port" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_driver.rsp_port" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "seq_item_port" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_driver.seq_item_port" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "apb2_master_input_monitor" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_input_monitor" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "in_aport" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_input_monitor.in_aport" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "apb2_master_scoreboard" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "in_afifo" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard.in_afifo" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "analysis_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard.in_afifo.analysis_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "get_ap" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard.in_afifo.get_ap" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "get_peek_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard.in_afifo.get_peek_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "put_ap" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard.in_afifo.put_ap" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "put_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard.in_afifo.put_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "apb2_master_sequencer" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "req_fifo" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.req_fifo" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "get_ap" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.req_fifo.get_ap" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "get_peek_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.req_fifo.get_peek_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "put_ap" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.req_fifo.put_ap" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "put_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.req_fifo.put_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "rsp_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.rsp_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "seq_item_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.seq_item_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "sqr_rsp_analysis_fifo" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.sqr_rsp_analysis_fifo" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "analysis_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.sqr_rsp_analysis_fifo.analysis_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "get_ap" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.sqr_rsp_analysis_fifo.get_ap" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "get_peek_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.sqr_rsp_analysis_fifo.get_peek_export" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "put_ap" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.sqr_rsp_analysis_fifo.put_ap" violates the uvm component name constraints
+UVM_WARNING /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_traversal.svh(274) @ 0: reporter [UVM/COMP/NAME] the name "put_export" of the component "uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.sqr_rsp_analysis_fifo.put_export" violates the uvm component name constraints
+UVM_INFO ../sv_src/apb2_master_input_monitor.sv(30) @ 0: uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_input_monitor [apb2_master_input_monitor] :Running ..
+UVM_INFO ../sv_src/apb2_master_scoreboard.sv(28) @ 0: uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard [apb2_master_scoreboard] Start of Run phase ..
+UVM_INFO ../sv_src/seq_tests/apb2_master_rand_test.sv(29) @ 190000: uvm_test_top [uvm_test_top] Test is running...
+UVM_INFO ../sv_src/seq_tests/apb2_master_rand_seq.sv(28) @ 190000: reporter [apb2_master_rand_seq_0] :Sequence is Running ....
+UVM_INFO ../sv_src/apb2_master_driver.sv(83) @ 190000: reporter [apb2_master_driver] Driving item: ---------------------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type               Size  Value                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+req                            apb2_master_xactn  -     @624                                                                                       
+  addr                         integral           8     'h52                                                                                       
+  data                         integral           8     'h6d                                                                                       
+  begin_time                   time               64    190000                                                                                     
+  depth                        int                32    'd2                                                                                        
+  parent sequence (name)       string             22    apb2_master_rand_seq_0                                                                     
+  parent sequence (full name)  string             91    uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer.apb2_master_rand_seq_0
+  sequencer                    string             68    uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_sequencer                       
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../sv_src/apb2_master_input_monitor.sv(55) @ 270000: uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_input_monitor [apb2_master_input_monitor] MONITOR_READ: --------------------------------------
+Name    Type               Size  Value
+--------------------------------------
+x0      apb2_master_xactn  -     @629 
+  addr  integral           8     'h52 
+  data  integral           8     'h0  
+--------------------------------------
+
+--------------------------------------
+Name    Type               Size  Value
+--------------------------------------
+x0      apb2_master_xactn  -     @629 
+  addr  integral           8     'h52 
+  data  integral           8     'h0  
+--------------------------------------
+UVM_WARNING ../sv_src/apb2_master_scoreboard.sv(63) @ 270000: uvm_test_top.apb2_master_env.apb2_master_agent.apb2_master_scoreboard [apb2_master_scoreboard] :Reading from unwritten Address
+UVM_INFO ../sv_src/seq_tests/apb2_master_rand_seq.sv(30) @ 290000: reporter [apb2_master_rand_seq_0] :Sequence is Complete ....
+UVM_INFO ../sv_src/seq_tests/apb2_master_rand_test.sv(34) @ 290000: uvm_test_top [uvm_test_top] End of main phase in test
+UVM_INFO /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_report_server.svh(864) @ 290000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   15
+UVM_WARNING :   30
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[UVM/COMP/NAME]    29
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+[apb2_master_agent]     2
+[apb2_master_driver]     1
+[apb2_master_input_monitor]     2
+[apb2_master_rand_seq_0]     2
+[apb2_master_scoreboard]     2
+[uvm_test_top]     2
+
+- /home/srini/proj/vlt_UVM/af_vlt_uvm_vips/uvm_vlt_af/src/base/uvm_root.svh:585: Verilog $finish
